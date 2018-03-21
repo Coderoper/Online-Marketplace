@@ -5,8 +5,38 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <title>Online Marketplace</title>
   </head>
   <body>
+    <div class="container">
+      <h1>Online Marketplace</h1>
+      <div>
+        <form id="formOne">
+
+          <div class="form-group">
+            <label for="name">A name</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input id="address" class="form-control" type="text">
+          </div>
+
+
+          <button type="submit" class="btn btn-primary btn-lg">Submit an order</button>
+        </form>
+      </div>
+
+      <div id="receipt">
+        <h1>Receipt</h1>
+        <p>Dear, <span class="name"></span>! Thank you for purchase!</p>
+        <h2>Shipping Details:</h2>
+        <p>Your address is: <span class="address"></span></p>
+
+        <button type="submit" class="btn btn-info">Confirm your address</button>
+
+      </div>
+    </div>
+
   </body>
   </html>
